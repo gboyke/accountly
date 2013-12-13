@@ -11,48 +11,39 @@ de:
   activemodel:
     errors:
       models:
-        accountly:
-          change_email_form:
-            attributes:
-              new_email:
-                blank: 'Bitte eine neue E-Mail angeben'
-                invalid: "Die E-Mail hat ein falsches Format."
-                duplicate: 'Diese E-Mail kann nicht gewählt werden.'
-              new_email_confirmation:
-                confirmation: 'Die E-Mail-Bestätigung war falsch'
-                blank: 'Bitte die E-Mail bestätigen'
-              password:
-                blank: 'Bitte auch das aktuelle Passwort angeben.'
-                invalid: 'Das aktuelle Passwort war nicht korrekt'
-        accountly:
-          username_form:
-            attributes:
-              new_username:
-                blank: 'Bitte einen Username angeben'
-                duplicate: 'Dieser Username kann nicht gewählt werden.'
-                too_short: 'Der neue Username ist zu kurz (mind. 5 Zeichen)'
-              new_username_confirmation:
-                confirmation: 'Die Bestätigung war falsch'
-                blank: 'Bitte den Username bestätigen'
-              original_password:
-                blank: 'Bitte auch das alte Passwort angeben.'
-                invalid: 'Das aktuelle Passwort war nicht korrekt'
-        password_forgotten_form:
+        accountly/change_email_form:
           attributes:
+            new_email:
+              blank: 'Bitte eine neue E-Mail angeben'
+              invalid: "Die E-Mail hat ein falsches Format."
+              duplicate: 'Diese E-Mail kann nicht gewählt werden.'
+            new_email_confirmation:
+              confirmation: 'Die E-Mail-Bestätigung war falsch'
+              blank: 'Bitte die E-Mail bestätigen'
+            password:
+              blank: 'Bitte auch das aktuelle Passwort angeben.'
+              invalid: 'Das aktuelle Passwort war nicht korrekt'
+        accountly/username_form:
+          attributes:
+            new_username:
+              blank: 'Bitte einen Username angeben'
+              duplicate: 'Dieser Username kann nicht gewählt werden.'
+              too_short: 'Der neue Username ist zu kurz (mind. 5 Zeichen)'
+            new_username_confirmation:
+              confirmation: 'Die Bestätigung war falsch'
+              blank: 'Bitte den Username bestätigen'
+            original_password:
+              blank: 'Bitte auch das alte Passwort angeben.'
+              invalid: 'Das aktuelle Passwort war nicht korrekt'
+        accountly/password_form:
+          attributes:
+            original_password:
+              blank: 'Bitte auch das alte Passwort angeben.'
+              invalid: 'Das aktuelle Passwort war nicht korrekt'
             new_password:
               too_short: 'Das neue Passwort ist zu kurz (mind. 5 Zeichen)'
             new_password_confirmation:
               confirmation: 'Die Passwortbestätigung war falsch.'
-        accountly:
-          password_form:
-            attributes:
-              original_password:
-                blank: 'Bitte auch das alte Passwort angeben.'
-                invalid: 'Das aktuelle Passwort war nicht korrekt'
-              new_password:
-                too_short: 'Das neue Passwort ist zu kurz (mind. 5 Zeichen)'
-              new_password_confirmation:
-                confirmation: 'Die Passwortbestätigung war falsch.'
 
   accountly:
     confirmation:
