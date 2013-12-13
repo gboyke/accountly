@@ -6,17 +6,10 @@ module Accountly
       update_attribute(:new_email_token, nil)
     end
 
-
-    def tokenmail(request)
-      AccountMailer.send(request, self).deliver
-    end
-
-
     def send_new_email_request
       return unless (confirmed? && generate_token(:new_email_token))
-      tokenmail(:new_email_request)
+      AccountMailer.send(:new_email_request, self).deliver
     end
-
 
     private
 

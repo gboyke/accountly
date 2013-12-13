@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 4.0.0"
   s.add_dependency "haml", "~> 4.0.4"
-  s.add_dependency "lobby", "0.0.5"
+  s.add_dependency "lobby", "0.0.6"
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "debugger"

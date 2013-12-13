@@ -1,5 +1,3 @@
-module Accountly
-  class AccountController < ApplicationController
+class Accountly::AccountController < Account::AccountController
 
-  end
 end

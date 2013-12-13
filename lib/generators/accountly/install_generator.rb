@@ -15,6 +15,11 @@ module Accountly
       directory "views", "app/views/accountly"
     end
 
+    # übergeordneter Account-Controller
+    def create_controllers
+      directory "controllers", "app/controllers"
+    end
+
     def create_locales
       template "config/locales/de.yml", "config/locales/de.accountly.yml"
       template "config/locales/en.yml", "config/locales/en.accountly.yml"
