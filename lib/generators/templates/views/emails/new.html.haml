@@ -1,0 +1,19 @@
+%h1
+  = t '.title'
+
+= form_for @change_email_form, url: emails_path, method: :post do |f|
+
+  = render :partial => "/accountly/common/form_errors", :locals => {:object => @change_email_form}
+
+  .form-group
+    = f.label :new_email, t( '.label_new_email')
+    = f.text_field :new_email, :class => 'form-control'
+  .form-group
+    = f.label :new_email_confirmation, t( '.label_new_email_confirmation')
+    = f.text_field :new_email_confirmation, :class => 'form-control'
+  .form-group
+    = f.label :password, t( '.label_password')
+    = f.password_field :password, :class => 'form-control'
+
+  .form-actions
+    = submit_tag t( 'common.button.send' ), :id => 'change_email_button', :class => 'btn btn-primary'

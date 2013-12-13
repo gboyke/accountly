@@ -1,0 +1,9 @@
+= Accountly
+
+Administration for wiki-project.
+*change username
+*change email
+*change password
+*generator for views
+
+This project rocks and uses MIT-LICENSE.

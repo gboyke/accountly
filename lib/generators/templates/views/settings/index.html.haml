@@ -1,0 +1,10 @@
+%h1
+  = t '.title'
+
+= t('.current_email', :email => current_user.email)
+= "("
+= link_to t( '.link_text.change_email'), new_email_url
+= ")"
+%br
+%br
+= link_to t( '.link_text.change_password'), new_password_url

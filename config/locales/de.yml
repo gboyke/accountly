@@ -1,0 +1,98 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+de:
+  common:
+    button:
+      send: 'send'
+    form:
+      error: "error"
+
+  activemodel:
+    errors:
+      models:
+        accountly:
+          change_email_form:
+            attributes:
+              new_email:
+                blank: 'Bitte eine neue E-Mail angeben'
+                invalid: "Die E-Mail hat ein falsches Format."
+                duplicate: 'Diese E-Mail kann nicht gewählt werden.'
+              new_email_confirmation:
+                confirmation: 'Die E-Mail-Bestätigung war falsch'
+                blank: 'Bitte die E-Mail bestätigen'
+              password:
+                blank: 'Bitte auch das aktuelle Passwort angeben.'
+                invalid: 'Das aktuelle Passwort war nicht korrekt'
+        accountly:
+          username_form:
+            attributes:
+              new_username:
+                blank: 'Bitte einen Username angeben'
+                duplicate: 'Dieser Username kann nicht gewählt werden.'
+                too_short: 'Der neue Username ist zu kurz (mind. 5 Zeichen)'
+              new_username_confirmation:
+                confirmation: 'Die Bestätigung war falsch'
+                blank: 'Bitte den Username bestätigen'
+              original_password:
+                blank: 'Bitte auch das alte Passwort angeben.'
+                invalid: 'Das aktuelle Passwort war nicht korrekt'
+        password_forgotten_form:
+          attributes:
+            new_password:
+              too_short: 'Das neue Passwort ist zu kurz (mind. 5 Zeichen)'
+            new_password_confirmation:
+              confirmation: 'Die Passwortbestätigung war falsch.'
+        accountly:
+          password_form:
+            attributes:
+              original_password:
+                blank: 'Bitte auch das alte Passwort angeben.'
+                invalid: 'Das aktuelle Passwort war nicht korrekt'
+              new_password:
+                too_short: 'Das neue Passwort ist zu kurz (mind. 5 Zeichen)'
+              new_password_confirmation:
+                confirmation: 'Die Passwortbestätigung war falsch.'
+
+  accountly:
+    confirmation:
+      new_email:
+        flash:
+          success: "Deine neue E-Mail wurde gesetzt."
+    passwords:
+      new:
+        title: 'Passwort ändern'
+        label_original_password: 'aktuelles Passwort'
+        label_new_password: 'neues Passwort'
+        label_new_password_confirmation: 'neues Passwort wiederholen'
+      create:
+        notice:
+          success: "Dein Passwort wurde geändert."
+    usernames:
+      new:
+        title: 'Username ändern'
+        label_original_password: 'aktuelles Passwort'
+        label_new_username: 'neuer Username'
+        label_new_username_confirmation: 'neuen Username wiederholen'
+      create:
+        notice:
+          success: "Dein Username wurde geändert."
+    emails:
+      new:
+        title: "E-Mail ändern"
+        label_new_email: "Neue E-Mail"
+        label_new_email_confirmation: "E-Mail bestätigen"
+        label_password: "Passwort"
+      create:
+        flash:
+          success: 'Ein Bestätigungslink wurde an die neue E-Mail-Adresse versendet.'
+
+  account_mailer:
+      new_email_request:
+        subject: 'Neue E-Mail bestätigen'
+        body: "Hallo,
+  um die Änderung Deiner E-Mail-Adress bei XYZ abzuschließen klicke bitte auf folgenden Link:
+
+  %{url}
+
+  Vielen Dank"

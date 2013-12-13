@@ -1,0 +1,98 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  common:
+    button:
+      send: 'send'
+    form:
+      error: "error"
+
+  activemodel:
+    errors:
+      models:
+        accountly/change_email_form:
+          attributes:
+            new_email:
+              blank: 'Please enter a new e-mail.'
+              invalid: "The e-mail has an incorrect format."
+              duplicate: 'This e-mail can not be selected.'
+            new_email_confirmation:
+              confirmation: 'The e-mail confirmation was wrong.'
+              blank: 'Please confirm the e-mail.'
+            password:
+              blank: 'Please also provide the current password.'
+              invalid: 'The current password was not correct.'
+        accountly/username_form:
+          attributes:
+            new_username:
+              blank: 'Please specify a user name.'
+              duplicate: 'This user name can not be selected.'
+              too_short: 'The new username is too short (minimum 5 characters).'
+            new_username_confirmation:
+              confirmation: 'The confirmation was wrong.'
+              blank: 'Please confirm the user name.'
+            original_password:
+              blank: 'Please also provide the old password.'
+              invalid: 'The current password was not correct.'
+        accountly/password_form:
+          attributes:
+            original_password:
+              blank: 'Please also provide the old password.'
+              invalid: 'The current password was not correct.'
+            new_password:
+              too_short: 'The new password is too short (minimum 5 characters).'
+            new_password_confirmation:
+              confirmation: 'The password confirmation was wrong.'
+
+  accountly:
+    settings:
+      index:
+        title: 'Your account'
+        current_email: "Your current e-mail is: %{email}"
+        link_text:
+          change_email: 'change'
+          change_password: 'change password'
+    confirmation:
+      new_email:
+        flash:
+          success: 'Your new email address is now activated.'
+      new_email_token:
+        title: "Confirm new email"
+    passwords:
+      new:
+        title: 'Update password'
+        label_original_password: 'current password'
+        label_new_password: 'new password'
+        label_new_password_confirmation: 'confirm new password'
+      create:
+        notice:
+          success: "Your password has been changed."
+    usernames:
+      new:
+        title: 'Update username'
+        label_original_password: 'current password'
+        label_new_username: 'new username'
+        label_new_username_confirmation: 'confirm new username'
+      create:
+        notice:
+          success: "Your username has been changed."
+    emails:
+      new:
+        title: "Update e-mail"
+        label_new_email: "new e-mail"
+        label_new_email_confirmation: "confirm new e-mail"
+        label_password: "password"
+      create:
+        flash:
+          success: 'A confirmation link has been sent to the new email address.'
+
+    account_mailer:
+      new_email_request:
+        subject: 'Confirm new email'
+        body: "Hello,
+  to complete the change of your e-mail address at XYZ please click on the following link:
+
+  %{url}
+
+  Thank you very much"

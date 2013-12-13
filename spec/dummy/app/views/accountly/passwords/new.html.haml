@@ -1,0 +1,18 @@
+%h1
+  = t '.title'
+
+= form_for [:account, @password_form], url: passwords_path, method: :post do |f|
+
+  = render :partial => "/accountly/common/form_errors", :locals => {:object => @password_form}
+
+  .form-group
+    = f.label :original_password, t( '.label_original_password')
+    = f.password_field :original_password, :class => 'form-control'
+  .form-group
+    = f.label :new_password, t( '.label_new_password')
+    = f.password_field :new_password, :class => 'form-control'
+  .form-group
+    = f.label :new_password_confirmation, t( '.label_new_password_confirmation')
+    = f.password_field :new_password_confirmation, :class => 'form-control'
+  .form-actions
+    = submit_tag t( 'common.button.send' ), :id => 'password_form_button', :class => 'btn btn-primary'
